@@ -28,10 +28,27 @@ blockquote cite:before {
   content: "\2014 \2009";
 }
 
+table {
+  margin: 0 auto;
+  width: 500px;
+}
+
+table td {
+  width: 50%;
+  vertical-align: top;
+}
+
+ul.services {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 20px;
+  text-align: left;
+}
+
 ul.links {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 
 ul.links li {
