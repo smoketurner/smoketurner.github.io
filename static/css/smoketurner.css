@@ -1,6 +1,10 @@
 body {
-  margin:0 auto;
-  font-family: Helvetica, Verdana, sans-serif;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 720px;
+  font-family: system-ui, -apple-system, Helvetica, Verdana, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
 }
 
 header, main, footer {
@@ -11,7 +15,50 @@ header {
   margin-top: 10px;
 }
 
+header h1 {
+  margin: 0;
+}
+
+header a {
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+main a {
+  color: inherit;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.columns section {
+  flex: 1;
+}
+
+@media (max-width: 560px) {
+  .columns {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+h2 {
+  font-size: 2em;
+}
+
 blockquote {
+  margin: 20px 0 0 0;
   font-family: Georgia, serif;
   font-size: 18px;
   font-style: italic;
@@ -28,21 +75,17 @@ blockquote cite:before {
   content: "\2014 \2009";
 }
 
-table {
-  margin: 0 auto;
-  width: 500px;
-}
-
-table td {
-  width: 50%;
-  vertical-align: top;
-}
-
 ul.services {
   list-style-type: none;
   padding: 0;
-  margin: 20px 0 0 20px;
+  margin: 20px 0 0 0;
   text-align: left;
+}
+
+@media (max-width: 560px) {
+  ul.services {
+    text-align: center;
+  }
 }
 
 ul.links {
@@ -52,11 +95,16 @@ ul.links {
 }
 
 ul.links li {
-  display: inline;
+  display: inline-block;
+  margin: 0 6px;
+}
+
+ul.links a {
+  color: #1a1a1a;
 }
 
 footer {
-  margin-top: 10px;
+  margin: 10px 0 20px 0;
   color: #999999;
   font-size: 12px;
 }

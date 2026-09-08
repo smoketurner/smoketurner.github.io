@@ -1,6 +1,7 @@
 {
     "name": "Smoke Turner",
     "short_name": "Smoke Turner",
+    "description": "Innovative software development firm focusing on creating simple solutions for challenging problems.",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,6 +16,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "start_url": "https://smoketurner.com",
+    "start_url": "/",
     "display": "standalone"
 }
