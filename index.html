@@ -1,95 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Innovative software development firm focusing on creating simple solutions for challenging problems.">
-    <link rel="canonical" href="https://smoketurner.com/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@smoketurnerllc">
-    <meta name="twitter:creator" content="@smoketurnerllc">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Smoke Turner, LLC">
-    <meta property="og:title" content="Smoke Turner, LLC">
-    <meta property="og:description" content="Innovative software development firm focusing on creating simple solutions for challenging problems.">
-    <meta property="og:url" content="https://smoketurner.com">
-    <meta property="og:image" content="https://smoketurner.com/og-image.jpg">
-    <meta property="og:image:width" content="1145">
-    <meta property="og:image:height" content="599">
-    <meta property="og:image:alt" content="Smoke Turner, LLC logo">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/static/css/smoketurner.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Smoke Turner, LLC",
-      "url": "https://smoketurner.com/",
-      "logo": "https://smoketurner.com/static/images/smoke_turner_f.png",
-      "email": "contact@smoketurner.com",
-      "description": "Innovative software development firm focusing on creating simple solutions for challenging problems.",
-      "sameAs": [
-        "https://github.com/smoketurner",
-        "https://x.com/smoketurnerllc",
-        "https://www.linkedin.com/company/smoketurner"
-      ]
-    }
-    </script>
-    <title>Smoke Turner</title>
-  </head>
-  <body>
-    <header>
-      <h1><a href="/"><img src="/static/images/smoke_turner_f.png" width="673" height="161" alt="Smoke Turner, LLC"></a></h1>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smoke Turner — Technology Consulting in Fairfield, CT</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:title" content="Smoke Turner — Technology Consulting in Fairfield, CT">
+<meta property="og:description" content="Website rebuilds, AI consulting, and fractional CTO services for Fairfield County businesses.">
+<meta property="og:url" content="https://smoketurner.com/">
+<meta property="og:type" content="website">
+<meta name="description" content="Senior technology help for Fairfield County businesses: website rebuilds, practical AI consulting, and fractional CTO services. Fairfield, CT.">
 
-    <main>
-      <div class="columns">
-        <section>
-          <h2>Services</h2>
-          <ul class="services">
-            <li>AWS Consulting</li>
-            <li>Software Development</li>
-            <li>DevOps Automation</li>
-            <li>Architecture Review</li>
-          </ul>
-        </section>
-        <section>
-          <h2><a href="mailto:contact@smoketurner.com">Contact Us</a></h2>
+<meta name="description" content="Independent technology consultant in Fairfield, CT. Website rebuilds, practical AI consulting, and fractional CTO services for Fairfield County small businesses and startups.">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0f0d;
+  --surface:#121613;
+  --surface-2:#171c18;
+  --border:#242b26;
+  --border-soft:#1c221e;
+  --ink:#e8ece9;
+  --muted:#9aa49d;
+  --faint:#6b756e;
+  --accent:#3db862;
+  --accent-bright:#54d97d;
+  --accent-dim:rgba(61,184,98,.12);
+  --flame:#f2803a;
+  --max:1080px;
+  --radius:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Instrument Sans',system-ui,sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+a{color:inherit}
+::selection{background:var(--accent);color:#08120b}
 
-          <blockquote>
-            &quot;Hurry! Go find me a left handed smoke turner!&quot;
-            <cite>Old Scouting Trick</cite>
-          </blockquote>
-        </section>
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(12,15,13,.86);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border-soft);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:17px;letter-spacing:-.01em}
+.brand img{width:34px;height:34px;display:block}
+.nav-links{display:flex;align-items:center;gap:28px;font-size:15px}
+.nav-links a{text-decoration:none;color:var(--muted);transition:color .15s}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--ink)}
+.nav-cta{
+  color:var(--ink) !important;
+  border:1px solid var(--border);
+  padding:8px 16px;border-radius:8px;
+  transition:border-color .15s,background .15s;
+}
+.nav-cta:hover,.nav-cta:focus-visible{border-color:var(--accent);background:var(--accent-dim)}
+@media (max-width:640px){
+  .nav-links a:not(.nav-cta){display:none}
+}
+
+/* ---------- hero ---------- */
+.hero{padding:96px 0 88px;position:relative;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(600px 320px at 18% 0%, rgba(61,184,98,.07), transparent 70%);
+}
+.kicker{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:10px;
+}
+.kicker::before{content:"";width:24px;height:1px;background:var(--accent);display:inline-block}
+h1{
+  font-size:clamp(34px,5.4vw,56px);font-weight:600;letter-spacing:-.025em;
+  line-height:1.12;max-width:15.5em;text-wrap:balance;
+}
+h1 .em{color:var(--accent-bright)}
+.hero p.lede{
+  margin-top:24px;max-width:34em;font-size:clamp(17px,2vw,19px);color:var(--muted);text-wrap:pretty;
+}
+.hero-actions{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:13px 24px;border-radius:9px;font-size:16px;font-weight:600;
+  text-decoration:none;min-height:48px;
+  transition:background .15s,border-color .15s,transform .1s;
+}
+.btn-primary{background:var(--accent);color:#07130a;border:1px solid var(--accent)}
+.btn-primary:hover,.btn-primary:focus-visible{background:var(--accent-bright);border-color:var(--accent-bright)}
+.btn-primary:active{transform:translateY(1px)}
+.btn-ghost{border:1px solid var(--border);color:var(--ink)}
+.btn-ghost:hover,.btn-ghost:focus-visible{border-color:var(--accent);background:var(--accent-dim)}
+.hero-note{margin-top:22px;font-size:14px;color:var(--faint)}
+
+/* ---------- section scaffolding ---------- */
+section{padding:80px 0;border-top:1px solid var(--border-soft)}
+.sec-head{margin-bottom:44px;max-width:36em}
+.sec-label{
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:12px;
+}
+h2{font-size:clamp(26px,3.4vw,34px);font-weight:600;letter-spacing:-.02em;line-height:1.2;text-wrap:balance}
+.sec-head p{margin-top:14px;color:var(--muted);text-wrap:pretty}
+
+/* ---------- services ---------- */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.svc{background:var(--surface);padding:32px 28px 28px;display:flex;flex-direction:column;transition:background .2s}
+.svc:hover{background:var(--surface-2)}
+.svc svg{width:26px;height:26px;stroke:var(--accent);margin-bottom:20px}
+.svc h3{font-size:19px;font-weight:600;letter-spacing:-.01em;margin-bottom:10px}
+.svc p{font-size:15.5px;color:var(--muted);flex:1;text-wrap:pretty}
+.svc ul{list-style:none;margin:16px 0 20px;flex:1}
+.svc li{font-size:15px;color:var(--muted);padding:5px 0 5px 22px;position:relative}
+.svc li::before{content:"";position:absolute;left:2px;top:13px;width:10px;height:2px;background:var(--accent);border-radius:1px}
+.price{
+  font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--ink);
+  border-top:1px solid var(--border-soft);padding-top:16px;margin-top:auto;
+}
+.price small{display:block;color:var(--faint);font-size:12.5px;margin-top:3px;font-family:'Instrument Sans',sans-serif}
+@media (max-width:880px){.services{grid-template-columns:1fr}}
+
+/* ---------- how I work ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:36px 28px;counter-reset:step}
+.step{counter-increment:step}
+.step .num{
+  font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent);
+  margin-bottom:10px;
+}
+.step .num::before{content:"0" counter(step)}
+.step h3{font-size:17px;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
+.step p{font-size:15px;color:var(--muted);text-wrap:pretty}
+@media (max-width:880px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.steps{grid-template-columns:1fr;gap:28px}}
+
+/* ---------- recent work ---------- */
+.work-line{
+  border:1px solid var(--border);border-radius:var(--radius);
+  background:var(--surface);padding:28px 30px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+}
+.work-line p{color:var(--muted);font-size:16px;max-width:38em;text-wrap:pretty}
+.work-line a{white-space:nowrap}
+
+/* ---------- contact ---------- */
+.contact{padding:96px 0}
+.contact-inner{
+  border:1px solid var(--border);border-radius:14px;
+  background:
+    radial-gradient(480px 260px at 85% 10%, rgba(61,184,98,.08), transparent 70%),
+    var(--surface);
+  padding:56px 48px;text-align:left;
+  display:flex;align-items:center;justify-content:space-between;gap:36px;flex-wrap:wrap;
+}
+.contact-inner h2{max-width:14em}
+.contact-inner .sub{margin-top:12px;color:var(--muted);max-width:30em;text-wrap:pretty}
+.service-area{margin-top:18px;font-size:14px;color:var(--faint)}
+.service-area strong{color:var(--muted);font-weight:500}
+@media (max-width:720px){.contact-inner{padding:40px 28px}}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--border-soft);padding:32px 0 40px}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--faint)}
+.foot .fb{display:flex;align-items:center;gap:9px}
+.foot img{width:22px;height:22px;opacity:.85}
+.foot a{color:var(--muted);text-decoration:none}
+.foot a:hover{color:var(--ink)}
+
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="Smoke Turner logo">
+      Smoke Turner
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#process">How I work</a>
+      <a href="#work">Recent work</a>
+      <a class="nav-cta" href="mailto:contact@smoketurner.com">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="wrap">
+      <div class="kicker">Fairfield, Connecticut</div>
+      <h1>Senior technology help for businesses that don't have <span class="em">a technology team.</span></h1>
+      <p class="lede">I'm an independent consultant in Fairfield, CT. I rebuild outdated websites, put practical AI to work in small firms, and serve as a fractional CTO for startups — flat fees, plain English, and you own everything I build.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:contact@smoketurner.com">Email me
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#services">See services</a>
       </div>
+      <p class="hero-note">Serving Fairfield County in person — remote welcome.</p>
+    </div>
+  </div>
 
-      <ul class="links">
-        <li>
-          <a href="https://github.com/smoketurner" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://x.com/smoketurnerllc" target="_blank" rel="noopener" aria-label="X">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/company/smoketurner" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-          </a>
-        </li>
-      </ul>
-    </main>
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">Services</div>
+        <h2>Three ways I help</h2>
+        <p>Scoped clearly, priced up front. If your project doesn't fit one of these, email me anyway — the first conversation is free either way.</p>
+      </div>
+      <div class="services">
 
-    <footer>
-      <div>Copyright &copy; <span id="year">2025</span> Smoke Turner, LLC</div>
-    </footer>
-    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-  </body>
+        <div class="svc">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 6.5h.01M9 6.5h.01"/></svg>
+          <h3>Website rebuilds</h3>
+          <p>Modern, mobile-first websites for local businesses — fast, easy to find, and easy to update.</p>
+          <ul>
+            <li>Design, build, and launch</li>
+            <li>Flat-fee project, fixed scope</li>
+            <li>Optional care plan: updates, hosting, edits</li>
+          </ul>
+          <div class="price">from $3,500 flat<small>care plans from $150/mo</small></div>
+        </div>
+
+        <div class="svc">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>
+          <h3>AI consulting</h3>
+          <p>Practical AI for small firms — not hype. Find where it genuinely saves hours, then implement it.</p>
+          <ul>
+            <li>AI-readiness audit of your operations</li>
+            <li>Staff training on real workflows</li>
+            <li>Intake automation, chat, back-office</li>
+          </ul>
+          <div class="price">audits from $1,500<small>implementation scoped after the audit</small></div>
+        </div>
+
+        <div class="svc">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20l4.5-9L12 16l4.5-11L21 20"/><path d="M3 20h18"/></svg>
+          <h3>Fractional CTO</h3>
+          <p>Senior technical judgment for startups and growing companies that aren't ready for a full-time hire.</p>
+          <ul>
+            <li>Technical strategy &amp; roadmap</li>
+            <li>Vendor selection, build-vs-buy</li>
+            <li>Hands-on when the work needs it</li>
+          </ul>
+          <div class="price">monthly retainer<small>scoped to your stage and needs</small></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">How I work</div>
+        <h2>No surprises, no lock-in</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num"></div>
+          <h3>Audit</h3>
+          <p>We talk through where you are — your site, your tools, your bottlenecks. I tell you plainly what's worth doing and what isn't.</p>
+        </div>
+        <div class="step">
+          <div class="num"></div>
+          <h3>Proposal</h3>
+          <p>You get a written scope in plain English: what I'll build, what it costs, and when it's done.</p>
+        </div>
+        <div class="step">
+          <div class="num"></div>
+          <h3>Flat fee</h3>
+          <p>One price, agreed up front. No hourly meter running, no change-order games.</p>
+        </div>
+        <div class="step">
+          <div class="num"></div>
+          <h3>You own everything</h3>
+          <p>Your domain, your code, your accounts, your data. If we part ways, nothing walks out the door with me.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">Recent work</div>
+        <h2>See it before you commit</h2>
+      </div>
+      <div class="work-line">
+        <p>I keep client work private by default, but design previews of recent rebuilds are available on request — including examples in your industry where I have them.</p>
+        <a class="btn btn-ghost" href="mailto:contact@smoketurner.com?subject=Design%20previews">Request previews</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-inner">
+        <div>
+          <h2>Tell me what's not working.</h2>
+          <p class="sub">One email is enough to start. I'll reply with honest first thoughts — no pitch deck, no pressure.</p>
+          <p class="service-area"><strong>Service area:</strong> Fairfield, Westport, Norwalk, Southport &amp; greater Fairfield County · remote welcome</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:contact@smoketurner.com">Email me
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="fb">
+      <img src="assets/logo.png" alt="">
+      <span>© 2026 Smoke Turner · Fairfield, CT</span>
+    </div>
+    <a href="mailto:contact@smoketurner.com">contact@smoketurner.com</a>
+  </div>
+</footer>
+
+</body>
 </html>
